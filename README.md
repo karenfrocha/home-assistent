@@ -1,73 +1,127 @@
-# React + TypeScript + Vite
+# 🏠 Home Assistant Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Painel de controle para uma casa inteligente desenvolvido com React, TypeScript e Vite.
 
-Currently, two official plugins are available:
+O projeto simula um sistema centralizado de automação residencial, permitindo monitorar dispositivos conectados, acompanhar consumo de energia, visualizar alertas em tempo real e controlar diversos ambientes da residência.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 📊 Dashboard com visão geral dos dispositivos
+- 🌡️ Monitoramento climático
+- ⚡ Controle e acompanhamento do consumo de energia
+- 💡 Controle de iluminação inteligente
+- ❄️ Controle de ar-condicionado
+- 🪟 Controle de persianas automatizadas
+- 🔊 Gerenciamento de dispositivos multimídia
+- 🚨 Sistema de alertas e notificações
+- 📱 Interface responsiva e moderna
+- 🏠 Organização por cômodos
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📸 Demonstração
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Dashboard Principal
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+![Dashboard Principal](./screenshots/dashboard.png)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Controle de Dispositivos
+
+![Controle de Dispositivos](./screenshots/devices.png)
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- React
+- TypeScript
+- Vite
+- CSS3
+- React Icons
+
+---
+
+## 🎨 Design
+
+O projeto utiliza uma interface inspirada em painéis modernos de automação residencial, com:
+
+- Tema Dark
+- Cartões interativos
+- Indicadores visuais de status
+- Componentes reutilizáveis
+- Layout responsivo
+- Paleta de cores focada em usabilidade
+
+---
+
+## 🚀 Como Executar
+
+### Clone o repositório
+
+```bash
+git clone https://github.com/seu-usuario/home-assistant.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Acesse a pasta
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd home-assistant
 ```
+
+### Instale as dependências
+
+```bash
+npm install
+```
+
+### Execute o projeto
+
+```bash
+npm run dev
+```
+
+A aplicação estará disponível em:
+
+```text
+http://localhost:5173
+```
+
+---
+
+## 📂 Estrutura do Projeto
+
+```text
+src/
+├── assets/
+├── components/
+├── data/
+├── hooks/
+├── types/
+├── App.tsx
+└── main.tsx
+```
+
+---
+
+## 📚 Objetivos do Projeto
+
+Este projeto foi desenvolvido com foco em:
+
+- Prática de React com TypeScript
+- Componentização
+- Gerenciamento de estados
+- Organização de código
+- Desenvolvimento de interfaces modernas
+- Construção de projetos para portfólio
+
+---
+
+## 👩‍💻 Autora
+
+Karen Felix
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Perfil-blue?logo=linkedin)](https://www.linkedin.com/in/karenfelixrocha/)
+
+[![GitHub](https://img.shields.io/badge/GitHub-Perfil-black?logo=github)](https://github.com/karenfrocha/karenfrocha)
